@@ -34,13 +34,15 @@ Click options or call handlers. For each question:
 ### Step 5: Verify & Stop
 Tell the user answers are selected. **Do not submit.** Let the user review before manually submitting.
 
-## Launch Browser
+## Default Browser
+
+**默认用 Edge，除非用户明确要求 Chrome。** 启动命令：
 
 ```bash
-# Edge
+# Edge (默认)
 "& 'C:\Program Files (x86)\Microsoft\Edge\Application\msedge.exe' --remote-debugging-port=9222 --remote-allow-origins=*"
 
-# Chrome
+# Chrome (仅当用户明确指定时)
 "& 'C:\Program Files\Google\Chrome\Application\chrome.exe' --remote-debugging-port=9222 --remote-allow-origins=*"
 ```
 
